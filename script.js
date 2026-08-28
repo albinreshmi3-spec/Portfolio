@@ -1,12 +1,8 @@
-/* =========================================================
-   PORTFOLIO JAVASCRIPT
-========================================================= */
+/* ===================PORTFOLIO JAVASCRIPT ================= */
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    /* =====================================================
-       SCROLL ANIMATION
-    ===================================================== */
+    /* ======================= SCROLL ANIMATION ============================ */
 
     const animatedElements =
         document.querySelectorAll(".fade-in-up");
@@ -39,9 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-    /* =====================================================
-       HEADER SCROLL EFFECT
-    ===================================================== */
+    /* ========================== HEADER SCROLL EFFECT =================== */
 
     const header = document.querySelector(".header");
 
@@ -64,25 +58,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     
 
-    /* =====================================================
-       MOBILE MENU BUTTON
-    ===================================================== */
+    /* ======================== MOBILE MENU BUTTON ========================= */
 
-    const menuButton =
-        document.getElementById("menuButton");
+    const menuButton = document.getElementById("menuButton");
+    const navMenu = document.getElementById("navMenu");
 
     menuButton.addEventListener("click", function () {
 
-        alert(
-            "Navigation menu can be added here."
-        );
+        navMenu.classList.toggle("active");
 
-    });
-
-
-    /* =====================================================
-       SMOOTH SCROLL
-    ===================================================== */
+});
+    /* ============================  SMOOTH SCROLL =================== */
 
     const navigationLinks =
         document.querySelectorAll('a[href^="#"]');
